@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 950px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+a {
+    font-family: Nunito;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    text-decoration: none;
+    color: #000000;
+}
+.cards {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.card {
+    width: 265px;
+    height: 234px;
+    border-radius: 8px;
+    border: 2px solid black;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 10px;
+    margin: 15px;
+    background-color: #1546;
+}
+
+.name{
+    font-family: Nunito;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 26px;
+    text-align: left;
+    width: 250px;
+    margin-bottom: 100px;
+}
+
+.category{
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: left;
+}
+
+.image{
+    max-width: 174px;
+    max-height: 130px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.quizesImage {
+    max-width: 140px;
+    max-height: 150px;
+}
+
+.titleCategory {
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+    text-align: center;
+}
+
+.numberOfQuestions {
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+}

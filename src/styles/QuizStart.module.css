@@ -1,0 +1,54 @@
+
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 940px;
+    height: 467px;
+    text-align: start;
+}
+.cards {
+    text-align: center;
+}
+.title{
+    font-family: Nunito;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.image {
+    max-width: 242px;
+    max-height: 224px;
+    margin: 36px 0;
+}
+.text{
+    text-align: center;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    width: 626px;
+    margin: 0 auto;
+}
+.textDiv{
+    width: 940px;
+    height: 467px;
+}
+.startButton {
+  width: 350px;
+  height: 48px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  background: #000000;
+  color: white;
+  margin: 36px 200px;
+  cursor: pointer;
+}

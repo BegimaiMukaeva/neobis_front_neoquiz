@@ -1,0 +1,62 @@
+
+.modal {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 40px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 720px;
+  height: 512px;
+}
+
+.image {
+  max-width: 219px;
+  max-height: 232px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.title {
+  font-family: Nunito;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 55px;
+  text-align: center;
+}
+
+.quantity {
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+}
+
+info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 10px 20px;
+  border-top: 1px solid #ccc;
+}
+
+.startButton {
+  width: 350px;
+  height: 48px;
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  background: #000000;
+  color: white;
+  margin: 36px 200px;
+  cursor: pointer;
+}

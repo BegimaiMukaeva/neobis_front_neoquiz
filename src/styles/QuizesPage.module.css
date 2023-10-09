@@ -1,0 +1,22 @@
+.main {
+    width: 950px;
+    margin: 0 auto;
+    padding: 30px 0;
+    height: 100vh;
+}
+.searchAndContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contentDiv {
+    width: 940px;
+    height: auto;
+    gap: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+

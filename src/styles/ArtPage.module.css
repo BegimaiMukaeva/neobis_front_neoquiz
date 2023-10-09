@@ -1,0 +1,20 @@
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+.searchAndContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contentDiv {
+    width: 940px;
+    height: auto;
+    /* gap: 40px; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

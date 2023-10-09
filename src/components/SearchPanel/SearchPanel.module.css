@@ -1,0 +1,29 @@
+.exit{
+    font-family: Nunito;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 213px;
+    height: 44px;
+    gap: 24px;
+    color: black;
+}
+
+.searchAndFilter{
+    width: 353px;
+    height: 44px;
+    gap: 16px;
+    display: flex;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
