@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./QuizModal.module.css";
-import quizImg from './Group 6.png'
 import { useNavigate } from "react-router-dom";
 
 const QuizModal = ({ quiz }) => {
@@ -27,8 +26,7 @@ const QuizModal = ({ quiz }) => {
               <div className={styles.modal}
                    style={{ background: color }}
                   >
-                  {/*<img src={quiz.image_url} alt={quiz.title} className={styles.image} />*/}
-                  <img src={quizImg} alt='' className={styles.image} />
+                  <img src={quiz.image} alt={quiz.title} className={styles.image} />
                   <div className={styles.info}>
                       <div className={styles.title}>{quiz.category_name}</div>
                       <div className={styles.quantity}>{quiz.quantity} вопросов</div>

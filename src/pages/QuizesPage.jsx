@@ -18,6 +18,7 @@ const QuizesPage = () => {
       })
       .then((response) => {
         setQuizes(response.data);
+        console.log(response.data);
       })
       .catch((error) => {
         console.error("Ошибка при получении данных:", error);

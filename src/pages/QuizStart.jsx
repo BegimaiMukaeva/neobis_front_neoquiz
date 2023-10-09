@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import TitleText from "../ui/layout/titleText/TitleText";
 import exit from "../img/artExit.svg";
 import styles from "../styles/QuizStart.module.css";
-import quizImg from "../ui/quizModal/Group 6.png";
 import React from "react";
 
 const QuizStart = () => {
@@ -16,7 +15,7 @@ const QuizStart = () => {
         <div className={styles.cards}>
           <div>
             <p className={styles.title}>Квиз “История”</p>
-            <img src={quizImg} alt='' className={styles.image} />
+            <img src='' alt='' className={styles.image} />
           </div>
           <div className={styles.textDiv}>
             <p className={styles.text}>

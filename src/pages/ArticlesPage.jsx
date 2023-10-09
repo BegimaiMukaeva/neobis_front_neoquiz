@@ -21,6 +21,7 @@ const ArticlePage = () => {
       })
       .then((response) => {
         setArticles(response.data.results);
+        console.log(response.data.results);
       })
       .catch((error) => {
         console.error("Ошибка при получении данных:", error);

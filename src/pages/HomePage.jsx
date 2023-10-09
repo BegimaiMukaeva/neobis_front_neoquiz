@@ -1,7 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import styles from '../styles/MainPage.module.css';
-import example from "../img/example.svg";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import TitleText from "../ui/layout/titleText/TitleText";
 
@@ -19,17 +18,19 @@ const HomePage = () => {
         })
         .then(response => {
             setArticles(response.data.articles_data);
+            console.log(response.data.articles_data);
             setQuizzes(response.data.quizzes_data);
-            console.log(response.data.articles_data)
+            console.log(response.data.quizzes_data)
         })
         .catch(error => {
             console.error('Ошибка при получении данных:', error);
         });
     }, []);
 
-    const artClick = (id) => {
+
+      const artClick = (id) => {
         navigate(`/artdetal/${id}`);
-    };
+      };
 
     const quizClick = () => {
         navigate("/quiz-start");
@@ -70,7 +71,7 @@ const HomePage = () => {
                     className={styles.card}
                     style={{ background: randomColor() }}
                 >
-                    <img className={styles.quizesImage} src={example} alt="" />
+                    <img className={styles.quizesImage} src={quiz.image} alt="" />
                     <div>
                         <p className={styles.titleCategory}>{quiz.category_name}</p>
                         <p className={styles.numberOfQuestions}>{`${quiz.quantity} вопросов`}</p>
@@ -85,7 +86,7 @@ const HomePage = () => {
             <TitleText />
             <div>
                 <Link to={"/art"}>Статьи</Link>
-                <div className={styles.cards}>
+                 <div className={styles.cards}>
                     {renderArticleCards()}
                 </div>
             </div>
