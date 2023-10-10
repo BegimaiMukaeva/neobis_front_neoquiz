@@ -32,8 +32,8 @@ const HomePage = () => {
         navigate(`/artdetal/${id}`);
       };
 
-    const quizClick = () => {
-        navigate("/quiz-start");
+    const quizClick = (id) => {
+        navigate(`/quiz-start/${id}`);
     };
     const randomColor = () => {
         let hash = "#";
@@ -67,7 +67,7 @@ const HomePage = () => {
         return quizzes.map((quiz, index) => (
             <div key={index}>
                 <button
-                    onClick={quizClick}
+                    onClick={() => quizClick(quiz.id)}
                     className={styles.card}
                     style={{ background: randomColor() }}
                 >

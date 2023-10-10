@@ -20,6 +20,8 @@
 // };
 //
 // export default SearchPanel;
+
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import artExitImg from "../../img/artExit.svg";
 import styles from "./SearchPanel.module.css";
@@ -27,10 +29,12 @@ import SearchInp from "../../ui/searchInp/SearchInp";
 import FilterBtn from "../../ui/filterBtn/FilterBtn";
 
 const SearchPanel = () => {
-  // Определяем функцию для выполнения поиска
-  const handleSearch = (searchTerm) => {
-    // Ваша логика для выполнения поиска по searchTerm
-    console.log(`Выполняем поиск по запросу: ${searchTerm}`);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = () => {
+    const encodedSearchTerm = encodeURIComponent(searchTerm);
+    // onSearch(encodedSearchTerm);
+    console.log(`Выполняем поиск по запросу: ${encodedSearchTerm}`);
   };
 
   return (
@@ -40,8 +44,7 @@ const SearchPanel = () => {
         <p>Все статьи</p>
       </Link>
       <div className={styles.searchAndFilter}>
-        {/* Передаем функцию handleSearch в компонент SearchInp */}
-        <SearchInp onSearch={handleSearch} />
+        <SearchInp onSearch={handleSearch} searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         <FilterBtn />
       </div>
     </div>
