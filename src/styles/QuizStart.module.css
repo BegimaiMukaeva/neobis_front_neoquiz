@@ -1,4 +1,6 @@
-
+* {
+    font-family: Nunito serif;
+}
 .wrap{
     display: flex;
     justify-content: center;
@@ -12,7 +14,6 @@
     text-align: center;
 }
 .title{
-    font-family: Nunito;
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
@@ -26,7 +27,6 @@
 }
 .text{
     text-align: center;
-    font-family: Nunito;
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;

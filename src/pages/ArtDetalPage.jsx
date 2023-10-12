@@ -13,10 +13,10 @@ const ArtDetailPage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://142.93.231.35:8000/articles/${id}`, {
+      .get(`https://kunasyl-backender.org.kg/articles/${id}`, {
         headers: {
           accept: "application/json",
-          "X-CSRFToken": "zRNEvVWCYLeL6n3QehPv5aGQvwZkWOyyVDV5pq6En5CWE1fikSCtsuC6L0FCelrX",
+          "X-CSRFToken": "2VgdFz7dfISKhRXHEBl9g6T2eDZFACFedGOcW0hNnZxtbCBomRdUTgnH2jzbFr4A",
         },
       })
       .then((response) => {

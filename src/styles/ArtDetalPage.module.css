@@ -1,4 +1,6 @@
-
+* {
+    font-family: Nunito serif;
+}
 .wrap{
     display: flex;
     justify-content: center;
@@ -10,27 +12,22 @@
     text-align: start;
 }
 .title{
-    font-family: Nunito;
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
-    letter-spacing: 0em;
     text-align: left;
     margin-top: 15px;
     margin-bottom: 0;
 }
 .category{
-    font-family: Nunito;
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
-    letter-spacing: 0em;
     text-align: left;
     margin: 0;
 }
 
 .text{
-    font-family: Nunito;
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;

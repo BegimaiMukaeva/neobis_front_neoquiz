@@ -4,6 +4,7 @@ import ArticlesPage from "./pages/ArticlesPage"
 import ArtDetailPage from './pages/ArtDetalPage';
 import QuizesPage from './pages/QuizesPage'
 import QuizStart from './pages/QuizStart'
+import StartTest from "./pages/StartTest";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/quizes' element = {<QuizesPage/>}/>
         <Route path="/artdetal/:id" element={<ArtDetailPage />} />
         <Route path='/quiz-start/:id' element={<QuizStart/>}/>
+        <Route path='/quiz/start/:id' element={<StartTest/>}/>
       </Routes>
     </div>
   );

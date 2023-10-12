@@ -1,0 +1,134 @@
+* {
+    font-family: Nunito serif;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 940px;
+    height: 467px;
+    text-align: start;
+}
+.cards {
+    text-align: center;
+}
+.questions p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    letter-spacing: 1px;
+}
+.question p {
+    width: 600px;
+    margin: 40px auto;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.question ul li {
+    margin: 20px auto;
+    width: 350px;
+    height: 48px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    border: 1px solid black;
+    gap: 10px;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nextQuestionButton {
+    width: 350px;
+    height: 48px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 10px;
+    background: rgba(12, 231, 223, 0.83);
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    color: white;}
+
+.finishQuizButton {
+    width: 350px;
+    height: 48px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 10px;
+    background: #e0e709;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    color: white;}
+
+.checkAnswerButton {
+    width: 350px;
+    height: 48px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 10px;
+    background: black;
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    color: white;
+}
+.correctAnswer {
+  background-color: #B9FFA0;
+}
+
+.incorrectAnswer {
+  background-color: #EF6E6E;
+}
+.textDiv {
+    margin: 0 auto;
+}
+.finishText {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.finishText h1 {
+    margin: 0 -30px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.currentAnswers {
+    width: 335px;
+    margin: 22px auto;
+    font-family: Nunito;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+}
+.currentAnswers span {
+    color: #4AA829;
+}
+.backTestText {
+    width: 350px;
+    margin: 70px auto;
+    font-family: Nunito;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+}

@@ -1,8 +1,10 @@
+* {
+    font-family: Nunito serif;
+}
 .main {
-    display: flex;
-    width: 100vw;
+    width: 940px;;
     height: 100vh;
-    justify-content: center;
+    margin: 0 auto;
 }
 .searchAndContent{
     display: flex;
@@ -13,8 +15,24 @@
 .contentDiv {
     width: 940px;
     height: auto;
-    /* gap: 40px; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.searchSad {
+    width: 300px;
+    margin: 150px auto;
+}
+.searchSad img {
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+.searchSad p {
+    font-family: Nunito;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    color: #5D5D5D;
 }
